@@ -13,6 +13,7 @@
     --white: #ffffff;
     --bg: #E5E5E5;
     --black: #000000;
+    --black-lg: #333333;
     --text-black: #0E0E0F;
     --green-1: #00B9B6;
     --green-2: #00CDAC;
@@ -32,7 +33,7 @@ body {
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
-    color: var(--text-black);
+    color: var(--black-lg);
     background-color: var(--bg);
 }
 
