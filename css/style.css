@@ -13,6 +13,11 @@
     --white: #ffffff;
     --bg: #E5E5E5;
     --black: #000000;
+    --text-black: #0E0E0F;
+    --green-1: #00B9B6;
+    --green-2: #00CDAC;
+    --gray: #2E3A59;
+    --orange: #FFA800;
 }
 
 /* base */
@@ -27,7 +32,7 @@ body {
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
-    color: var(--black);
+    color: var(--text-black);
     background-color: var(--bg);
 }
 
