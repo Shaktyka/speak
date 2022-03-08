@@ -75,7 +75,8 @@ button {
 }
 
 .container {
-    width: 360px;
+    min-width: 320px;
+    width: 320px;
     margin: 0 auto;
     padding: 0;
 }
