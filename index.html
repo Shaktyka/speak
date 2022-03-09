@@ -16,83 +16,226 @@
     <header class="header">
         <div class="container">
             <!-- logo -->
+            <div class="logo">
+                <a href="#" class="logo__link">
+                    <img src="images/content/logo.svg" width="" height="" alt="Логотип">
+                </a>
+            </div>
             <!-- menu -->
             <!-- user-menu -->
         </div>
     </header>
 
     <main class="main">
-        <h1>Сессии с психологом онлайн</h1>
+        <h1 class="visually-hidden">Сессии с психологом онлайн</h1>
         <!-- hero -->
         <section class="module hero">
             <div class="container">
-                <h2>Сессии с психологом<br>Онлайн</h2>
+                <h2 class="module__title">Сессии с психологом<br>Онлайн</h2>
             </div>
         </section>
         <!-- app -->
         <section class="module app">
             <div class="container">
-                <h2>Скачайте бесплатно приложение SPEAK</h2>
+                <h2 class="module__title">Скачайте бесплатно приложение SPEAK</h2>
             </div>
         </section>
         <!-- speakers -->
         <section class="module speakers">
             <div class="container">
-                <h2>Психологи, работающие с актуальными темами</h2>
+                <h2 class="module__title speakers__title">Психологи, работающие с актуальными темами</h2>
+                <!-- Темы -->
+                <ul class="list speakers__themes themes">
+                    <li class="themes__item">
+                        <a class="link" href="#">Чувства</a>
+                    </li>
+                    <li class="themes__item">
+                        <a class="link" href="#">Одиночество</a>
+                    </li>
+                    <li class="themes__item themes__item--active">
+                        <a class="link" href="#">Вредные привычки</a>
+                    </li>
+                    <li class="themes__item">
+                        <a class="link" href="#">Отношения</a>
+                    </li>
+                    <li class="themes__item">
+                        <a class="link" href="#">Работа</a>
+                    </li>
+                    <li class="themes__item">
+                        <a class="link" href="#">Смыслы</a>
+                    </li>
+                    <li class="themes__item">
+                        <a class="link" href="#">Одиночество</a>
+                    </li>
+                    <li class="themes__item">
+                        <a class="link" href="#">Одиночество</a>
+                    </li>
+                    <li class="themes__item">
+                        <a class="link" href="#">Отношения с близкими</a>
+                    </li>
+                    <li class="themes__item themes__item--more">
+                        <a class="link" href="#">+300 психологов</a>
+                    </li>
+                </ul>
+                <!-- Психологи (слайдер) -->
+                <div class="speakers__psychos slider">
+                    <ul class="list psychos">
+                        <li class="psychos__item psycho slider__item">
+                            <div class="psycho__img-wrap">
+                                <img class="img" src="images/content/photo-1.jpeg" width="" height="" alt="Психолог 1">
+                            </div>
+                            <h3 class="psycho__name">Илья Благов</h3>
+                            <div class="psycho__info">
+                                <ul class="list psycho__stars stars">
+                                    <li class="stars__item">
+                                        <input type="checkbox" name="stars" value="1" checked>
+                                        <input type="checkbox" name="stars" value="1" checked>
+                                        <input type="checkbox" name="stars" value="1" checked>
+                                        <input type="checkbox" name="stars" value="1" checked>
+                                        <input type="checkbox" name="stars" value="1" checked>
+                                    </li>
+                                </ul>
+                                <a class="psycho__link" href="#">
+                                    <img src="/images/icons/arrow-right.svg" alt="Стрелка для перехода на страницу психолога">
+                                </a>
+                            </div>
+                        </li>
+                        <li class="psychos__item slider__item">
+                            <div class="psycho__img-wrap">
+                                <img class="img" src="images/content/photo-2.jpeg" width="" height="" alt="Психолог 2">
+                            </div>
+                            <h3 class="psycho__name">Иванна Есина</h3>
+                            <div class="psycho__info">
+                                <ul class="list psycho__stars stars">
+                                    <li class="stars__item">
+                                        <input type="checkbox" name="stars" value="1" checked>
+                                        <input type="checkbox" name="stars" value="1" checked>
+                                        <input type="checkbox" name="stars" value="1" checked>
+                                        <input type="checkbox" name="stars" value="1" checked>
+                                        <input type="checkbox" name="stars" value="1" checked>
+                                    </li>
+                                </ul>
+                                <a class="psycho__link" href="#">
+                                    <img src="/images/icons/arrow-right.svg" alt="Стрелка для перехода на страницу психолога">
+                                </a>
+                            </div>
+                        </li>
+                        <li class="psychos__item slider__item">
+                            <div class="psycho__img-wrap">
+                                <img class="img" src="images/content/photo-3.jpeg" width="" height="" alt="Психолог 3">
+                            </div>
+                            <h3 class="psycho__name">Артур Островский</h3>
+                            <div class="psycho__info">
+                                <ul class="list psycho__stars stars">
+                                    <li class="stars__item">
+                                        <input type="checkbox" name="stars" value="1" checked>
+                                        <input type="checkbox" name="stars" value="1" checked>
+                                        <input type="checkbox" name="stars" value="1" checked>
+                                        <input type="checkbox" name="stars" value="1" checked>
+                                        <input type="checkbox" name="stars" value="1" checked>
+                                    </li>
+                                </ul>
+                                <a class="psycho__link" href="#">
+                                    <img src="/images/icons/arrow-right.svg" alt="Стрелка для перехода на страницу психолога">
+                                </a>
+                            </div>
+                        </li>
+                        <li class="psychos__item slider__item">
+                            <div class="psycho__img-wrap">
+                                <img class="img" src="images/content/photo-4.jpeg" width="" height="" alt="Психолог 4">
+                            </div>
+                            <h3 class="psycho__name">Юля Заграничная</h3>
+                            <div class="psycho__info">
+                                <ul class="list psycho__stars stars">
+                                    <li class="stars__item">
+                                        <input type="checkbox" name="stars" value="1" checked>
+                                        <input type="checkbox" name="stars" value="1" checked>
+                                        <input type="checkbox" name="stars" value="1" checked>
+                                        <input type="checkbox" name="stars" value="1" checked>
+                                        <input type="checkbox" name="stars" value="1" checked>
+                                    </li>
+                                </ul>
+                                <a class="psycho__link" href="#">
+                                    <img src="/images/icons/arrow-right.svg" alt="Стрелка для перехода на страницу психолога">
+                                </a>
+                            </div>
+                        </li>
+                        <li class="psychos__item slider__item">
+                            <div class="psycho__img-wrap">
+                                <img class="img" src="images/content/photo-5.jpeg" width="" height="" alt="Психолог 5">
+                            </div>
+                            <h3 class="psycho__name">Андрей Ян</h3>
+                            <div class="psycho__info">
+                                <ul class="list psycho__stars stars">
+                                    <li class="stars__item">
+                                        <input type="checkbox" name="stars" value="1" checked>
+                                        <input type="checkbox" name="stars" value="1" checked>
+                                        <input type="checkbox" name="stars" value="1" checked>
+                                        <input type="checkbox" name="stars" value="1" checked>
+                                        <input type="checkbox" name="stars" value="1" checked>
+                                    </li>
+                                </ul>
+                                <a class="psycho__link" href="#">
+                                    <img src="/images/icons/arrow-right.svg" alt="Стрелка для перехода на страницу психолога">
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
         <!-- help -->
         <section class="module help">
             <div class="container">
-                <h2>Поможем вам</h2>
+                <h2 class="module__title">Поможем вам</h2>
             </div>
         </section>
         <!-- advantages -->
         <section class="module advantages">
             <div class="container">
-                <h2>Преимущества онлайн сессий с психологом</h2>
+                <h2 class="module__title">Преимущества онлайн сессий с психологом</h2>
             </div>
         </section>
         <!-- steps -->
         <section class="module steps">
             <div class="container">
-                <h2>Как мы отбираем специалистов?</h2>
+                <h2 class="module__title">Как мы отбираем специалистов?</h2>
             </div>
         </section>
         <!-- about -->
         <section class="module about">
             <div class="container">
-                <h2>О сервисе</h2>
+                <h2 class="module__title">О сервисе</h2>
             </div>
         </section>
         <!-- process -->
         <section class="module process">
             <div class="container">
-                <h2>Как это устроено</h2>
+                <h2 class="module__title">Как это устроено</h2>
             </div>
         </section>
         <!-- price -->
         <section class="module price">
             <div class="container">
-                <h2>Услуги</h2>
+                <h2 class="module__title">Услуги</h2>
             </div>
         </section>
         <!-- app-2 -->
         <section class="module app-2">
             <div class="container">
-                <h2>Скачайте бесплатно приложение SPEAK</h2>
+                <h2 class="module__title">Скачайте бесплатно приложение SPEAK</h2>
             </div>
         </section>
         <!-- reviews -->
         <section class="module reviews">
             <div class="container">
-                <h2>Отзывы</h2>
+                <h2 class="module__title">Отзывы</h2>
             </div>
         </section>
         <!-- children -->
         <section class="module children">
             <div class="container">
-                <h2>Детский психолог онлайн</h2>
+                <h2 class="module__title">Детский психолог онлайн</h2>
             </div>
         </section>
     </main>

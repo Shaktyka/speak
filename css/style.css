@@ -95,6 +95,12 @@ button {
     overflow: hidden;
 }
 
+/* test */
+
+* {
+    outline: 1px solid gray;
+}
+
 /* header */
 
 /* main */
