@@ -29,10 +29,11 @@ body {
     padding: 0;
     min-width: 360px;
     min-height: 100%;
-    font-family: "Arial", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
+    font-style: normal;
     color: var(--black-lg);
     /* background-color: var(--bg); */
     background: rgba(249, 253, 255, 0.7);
@@ -86,7 +87,6 @@ button {
 }
 
 .btn--act {
-    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -236,5 +236,32 @@ button {
 }
 
 /* main */
+
+/* module */
+
+.module__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: (--text-black);
+}
+
+/* hero */
+
+.hero__info {
+    text-align: center;
+}
+
+.hero__subtitle {
+    margin: 0;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--green-1)
+}
+
+.hero__title {
+    margin-bottom: 30px;
+}
 
 /* footer */
