@@ -233,6 +233,7 @@ button {
 .burger-menu__btn {
     width: 24px;
     height: 20px;
+    padding: 0;
 }
 
 /* main */
@@ -276,6 +277,27 @@ button {
 
 .hero__img-wrap {
     display: flex;
+}
+
+/* app */
+
+.app__video-wrap {
+    position: relative;
+    height: auto;
+}
+
+.app__video {
+    display: flex;
+    width: 320px;
+}
+
+.app__video-play {
+    display: flex;
+    position: absolute;
+    top: calc(50% - 26px);
+    left: calc(50% - 37px);
+    padding: 0;
+    background: none;
 }
 
 /* footer */
