@@ -239,6 +239,11 @@ button {
 
 /* module */
 
+.module {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 .module__title {
     margin: 0;
     font-weight: 700;
@@ -249,8 +254,13 @@ button {
 
 /* hero */
 
+.hero {
+    padding-top: 30px;
+}
+
 .hero__info {
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .hero__subtitle {
@@ -262,6 +272,10 @@ button {
 
 .hero__title {
     margin-bottom: 30px;
+}
+
+.hero__img-wrap {
+    display: flex;
 }
 
 /* footer */
