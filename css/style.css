@@ -358,4 +358,48 @@ button {
     margin-right: 20px;
 }
 
+/* Психологи */
+
+.speakers__title {
+    text-align: center;
+    margin-bottom: 22.5px;
+}
+
+.themes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 22.5px;
+}
+
+.themes__item {
+    margin: 7.5px;
+
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+
+.themes__item--active {
+    box-shadow: 0px 4px 25px rgba(0, 185, 182, 0.25);
+}
+
+.themes__item--active .themes__link {
+    color: var(--green-1);
+}
+
+.themes__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px 30px;
+
+    font-size: 14px;
+    line-height: 120%;
+    color: var(--black-lg);
+}
+
+/* Поможем вам */
+
 /* footer */
