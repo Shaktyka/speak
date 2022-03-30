@@ -406,4 +406,30 @@ button {
 
 /* Поможем вам */
 
+.help__title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.help__list {
+    padding-left: 20px;
+    list-style: url('../images/icons/bullet.png');
+    margin-bottom: 20px;
+}
+
+.help__item {
+    padding-left: 10px;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.help__item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.help__img {
+    width: 320px;
+    height: 289px;
+}
+
 /* footer */
