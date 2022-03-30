@@ -19,6 +19,7 @@
     --green-2: #00CDAC;
     --gray: #2E3A59;
     --orange: #FFA800;
+    --lt-blue: rgba(0, 185, 182, 0.1);
 }
 
 /* base */
@@ -430,6 +431,68 @@ button {
 .help__img {
     width: 320px;
     height: 289px;
+}
+
+/* Преимущества advantages */
+
+.advantages {
+    padding-top: 90px;
+}
+
+.advantages__content {
+    background-color: var(--lt-blue);
+}
+
+.advantages__img {
+    position: relative;
+    top: -50px;
+    margin-bottom: -20px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.advantages__title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.advantages__list {
+    /* list-style: disc; */
+    padding-left: 12px;
+}
+
+.advantages__item {
+    position: relative;
+}
+
+.advantages__item::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -12px;
+    width: 5px;
+    height: 5px;
+    background-color: var(--green-1);
+    border-radius: 50%;
+}
+
+.advantages__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.advantages__subtitle {
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--text-black);
+}
+
+.advantages__text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 140%;
 }
 
 /* footer */
