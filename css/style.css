@@ -554,6 +554,9 @@ button {
 }
 
 .help__img-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 320px;
     height: 335px;
 }
