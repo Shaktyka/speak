@@ -394,15 +394,6 @@
             <div class="container">
                 <h2 class="module__title about__title">О сервисе</h2>
                 <div class="about__info">
-                    <!-- видео -->
-                    <div class="about__video-wrap">
-                        <video class="about__video" poster="images/content/cover.png">
-                            Your browser does not support the video tag.
-                        </video>
-                        <button class="about__video-play" type="button">
-                            <img src="images/icons/youtube-play.svg" alt="Иконка проигрывания видео">
-                        </button>
-                    </div>
                     <!-- статистика -->
                     <ul class="list about__stats stats">
                         <li class="stats__item">
@@ -418,16 +409,35 @@
                             <span class="stats__text">психологов</span>
                         </li>
                     </ul>
+                    <!-- видео -->
+                    <div class="about__video-wrap">
+                        <video class="about__video" poster="images/content/cover.png">
+                            Your browser does not support the video tag.
+                        </video>
+                        <button class="btn about__video-play" type="button">
+                            <img src="images/icons/youtube-play.svg" alt="Иконка проигрывания видео">
+                        </button>
+                    </div>
                 </div>
                 <!-- Список кнопок -->
                 <ul class="list about__selection selection">
-                    <li class="selection__item selection__item--later">
-                        <h3 class="selection__title">Подбор “Попозже”</h3>
-                        <p class="selection__text">Подбор с возможностью бронирование сессии на будущее</p>
+                    <li class="selection__item">
+                        <div class="selection__img-wrap">
+                            <img src="images/icons/podbor-icon-1.png" width="70" height="70" alt="Иконка" class="selection__img">
+                        </div>
+                        <div class="selection__info">
+                            <h3 class="selection__title">Подбор “Попозже”</h3>
+                            <p class="selection__text">Подбор с возможностью бронирование сессии на будущее</p>
+                        </div>
                     </li>
-                    <li class="selection__item selection__item--now">
-                        <h3 class="selection__title">Подбор “Сейчас”</h3>
-                        <p class="selection__text">Подбор с возможностью начала сессии “здесь и сейчас”</p>
+                    <li class="selection__item">
+                        <div class="selection__img-wrap">
+                            <img src="images/icons/podbor-icon-1.png" width="70" height="70" alt="Иконка" class="selection__img">
+                        </div>
+                        <div class="selection__info">
+                            <h3 class="selection__title">Подбор “Сейчас”</h3>
+                            <p class="selection__text">Подбор с возможностью начала сессии “здесь и сейчас”</p>
+                        </div>
                     </li>
                 </ul>
             </div>

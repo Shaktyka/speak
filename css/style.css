@@ -561,6 +561,114 @@ button {
     height: 335px;
 }
 
-/*  */
+/* О сервисе */
+
+.about__title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.about__info {
+    margin-bottom: 40px;
+}
+
+.about__stats {
+    margin-bottom: 40px;
+}
+
+.stats__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stats__item:not(:last-child) {
+    margin-right: 20px;
+    width: 94px;
+    max-width: 94px;
+}
+
+.stats__subtitle {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: var(--orange);
+    margin: 0;
+}
+
+.stats__text {
+    font-size: 14px;
+    line-height: 140%;
+    margin: 0;
+    text-align: center;
+}
+
+.about__video-wrap {
+    position: relative;
+    height: auto;
+}
+
+.about__video {
+    display: flex;
+    width: 320px;
+}
+
+.about__video-play {
+    display: flex;
+    position: absolute;
+    top: calc(50% - 26px);
+    left: calc(50% - 37px);
+    padding: 0;
+    background: none;
+}
+
+.selection__item {
+    display: flex;
+    align-items: flex-start;
+
+    background: var(--white);
+    padding: 10px 20px 20px 10px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 24px;
+}
+
+.selection__img-wrap {
+    display: flex;
+    margin-right: 10px;
+}
+
+.selection__info {
+    padding-top: 10px;
+}
+
+.selection__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    margin-bottom: 10px;
+}
+.selection__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+/* Как это устроено */
+
+/* Услуги */
+
+/* app 2 */
+
+/* Отзывы */
+
+/* Детский психолог онлайн */
 
 /* footer */
