@@ -514,6 +514,7 @@ button {
 
 .steps__list {
     margin-bottom: 20px;
+    counter-reset: list;
 }
 
 .step {
@@ -524,6 +525,19 @@ button {
 
 .step:not(:last-child) {
     margin-bottom: 20px;
+}
+
+.step::before {
+    counter-increment: list;
+    content: counter(list);
+    position: absolute;
+    top: -3px;
+    left: 0;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 100%;
+    color: var(--green-1);
+    opacity: 0.1;
 }
 
 .step__title {
@@ -538,5 +552,12 @@ button {
     font-size: 16px;
     line-height: 140%;
 }
+
+.help__img-wrap {
+    width: 320px;
+    height: 335px;
+}
+
+/*  */
 
 /* footer */
