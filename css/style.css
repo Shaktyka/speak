@@ -679,6 +679,12 @@ button {
     margin-bottom: 30px;
 }
 
+.price__list {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+}
+
 .service {
     padding: 20px;
     color: var(--black-lg);
@@ -692,7 +698,7 @@ button {
     box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
 }
 
-.service:not(:last-child) {
+.service:not(:first-child) {
     margin-bottom: 32px;
 }
 
@@ -766,6 +772,43 @@ button {
 
 .service__link {
     margin-top: 30px;
+}
+
+/* Стили для карточки "Популярное" */
+
+.service--popular {
+    color: var(--white);
+}
+
+.service--popular .service__item {
+    color: var(--white);
+}
+
+.service--popular .service__item::before {
+    content: url('../images/icons/bullet-1.png');
+}
+
+.service__calc {
+    display: flex;
+    padding: 12px 13px;
+    /* justify-content: space-between; */
+    margin-top: 30px;
+
+    background-color: var(--white);
+    border-radius: 12px;
+}
+
+.service__wrap {
+    display: flex;
+    align-items: center;
+}
+
+.service__wrap--time .service__input {
+    max-width: 87px;
+}
+
+.service__wrap--price .service__input {
+    max-width: 78px;
 }
 
 /* app 2 */
