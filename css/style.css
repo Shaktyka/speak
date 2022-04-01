@@ -859,3 +859,99 @@ button {
 }
 
 /* footer */
+
+.footer {
+    padding: 50px 0;
+}
+
+.footer__logo {
+    width: 126px;
+    height: 30px;
+    margin-bottom: 40px;
+}
+
+.footer__logo .logo__img {
+    width: 126px;
+    height: 30px;
+}
+
+.footer__nav .main-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 190px;
+    margin-bottom: 40px;
+}
+
+.footer__nav .main-menu__item:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.footer__nav .main-menu__item {
+    display: flex;
+}
+
+.footer__nav .menu__link {
+    display: flex;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--black-lg);
+    text-decoration: none;
+}
+
+/* ссылки на соцсети */
+
+.footer .social {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.social__item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.social__item {
+    width: 40px;
+    height: 40px;
+    display: flex;
+}
+
+/* Контакты */
+
+.contacts__item {
+    position: relative;
+    padding-left: 34px;
+}
+
+.contacts__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.contacts__item::before {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 24px;
+    height: 24px;
+}
+
+.contacts__item--mail::before {
+    content: url('../images/icons/icon_mail.svg');
+}
+
+.contacts__item--address::before {
+    content: url('../images/icons/icon_pin.svg');
+}
+
+.contacts__link {
+    display: flex;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--black-lg);
+}
