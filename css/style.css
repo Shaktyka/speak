@@ -1113,6 +1113,18 @@ button {
     margin-bottom: 30px;
 }
 
+.reviews__list {
+    display: flex;
+}
+
+.reviews__item {
+    display: none;
+}
+
+.reviews__item--active {
+    display: block;
+}
+
 /* Карточка отзыва */
 .review {
     max-width: 320px;
