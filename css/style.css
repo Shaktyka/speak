@@ -404,12 +404,40 @@ button {
     color: var(--white);
 }
 
+/* Звёздочки */
+
+.stars__list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.stars__star {
+    margin-right: 5px;
+    width: 14px;
+    height: 14px;
+    background-image: url("../images/icons/star-colored.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 5px;
+}
+
+.stars__star:last-child {
+    margin-right: 0;
+}
+
+
 /* Слайдер */
 
 .switches {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.slider__switches {
+    margin-top: 40px;
 }
 
 .switches__item {
@@ -431,10 +459,6 @@ button {
 }
 
 /* Карточка психолога */
-
-.psychos {
-    margin-bottom: 40px;
-}
 
 .psycho {
     display: flex;
