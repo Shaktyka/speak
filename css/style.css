@@ -74,6 +74,8 @@ button {
     object-fit: contain;
 }
 
+/* Классы для кнопок */
+
 .btn {
     display: inline-block;
     padding: 12px 30px 14px;
@@ -138,6 +140,8 @@ button {
     box-shadow: 0px 15px 30px rgba(220, 232, 243, 0.25);
 }
 
+/* Другие общие классы */
+
 .container {
     min-width: 360px;
     width: 320px;
@@ -197,9 +201,18 @@ button {
 /* Логотип */
 
 .logo {
+    display: flex;
+    flex-shrink: 0;
     width: 92px;
     height: 18px;
     margin-right: auto;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.logo:hover,
+.logo:focus {
+    opacity: 0.6;
 }
 
 .logo__link {
