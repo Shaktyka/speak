@@ -12,6 +12,7 @@
 :root {
     --white: #ffffff;
     --bg: #E5E5E5;
+    --bg-base: #F9FDFF;
     --black: #000000;
     --black-lg: #333333;
     --text-black: #0E0E0F;
@@ -36,7 +37,8 @@ body {
     font-weight: 400;
     font-style: normal;
     color: var(--black-lg);
-    background: rgba(249, 253, 255, 0.7);
+    /* background: rgba(249, 253, 255, 0.7); */
+    background-color: var(--bg-base);
     backdrop-filter: blur(700px);
 }
 
@@ -286,6 +288,8 @@ button {
 }
 
 .app__video-wrap {
+    display: flex;
+    justify-content: center;
     position: relative;
     height: auto;
     margin-bottom: 30px;
@@ -548,7 +552,15 @@ button {
     padding-top: 90px;
 }
 
+.advantages .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .advantages__content {
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: var(--lt-blue);
 }
 
