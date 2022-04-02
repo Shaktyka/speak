@@ -857,7 +857,7 @@ button {
 .process-pics {
     display: flex;
     justify-content: center;
-    /* min-height: ; */
+    min-height: 320px;
 }
 
 .process-pics__item {
@@ -872,6 +872,76 @@ button {
 
 .process-pics__item--active {
     display: flex;
+}
+
+/* Описание слайдера */
+
+.process__steps {
+    display: flex;
+}
+
+.process__step {
+    margin-bottom: 40px;
+}
+
+.process-step {
+    display: none;
+}
+
+.process-step--active {
+    display: flex;
+    justify-content: center;
+}
+
+.process-steps__btn {
+    display: none;
+}
+
+.process-step__wrap {
+    text-align: center;
+}
+
+.process-step__title {
+    margin: 0;
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--text-black);
+}
+
+.process-step__text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.process-step__text p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.process-step__text span {
+    color: var(--green-1);
+}
+
+.process__link-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.process__link {
+    background: #F9FDFF;
+
+    color: var(--green-1);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+
+    border: 1px solid #00B9B6;
+    box-shadow: 0px 15px 30px rgba(220, 232, 243, 0.25);
+    border-radius: 12px;
 }
 
 /* Услуги */
