@@ -815,6 +815,63 @@ button {
 
 /* Отзывы */
 
+.reviews__title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Карточка отзыва */
+.review {
+    max-width: 320px;
+    padding: 20px;
+
+    background-color: var(--white);
+
+    color: var(--black-lg);
+
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 24px;
+}
+
+.reviw__wrap {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.review__img {
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+
+    border-radius: 24px;
+}
+
+.review__stars {
+    margin-bottom: 10px;
+}
+
+.review__author {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.review__author-profession {
+    margin: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.review__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+}
+
 /* Детский психолог онлайн */
 
 .children__title {
