@@ -803,7 +803,7 @@ button {
 }
 
 .process__switches {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .line-steps__item {
@@ -846,6 +846,32 @@ button {
 .line-steps__item--active .line-steps__btn {
     background-color: var(--green-1);
     color: var(--white);
+}
+
+/* Слайдер картинок */
+
+.process__imgs {
+    margin-bottom: 30px;
+}
+
+.process-pics {
+    display: flex;
+    justify-content: center;
+    /* min-height: ; */
+}
+
+.process-pics__item {
+    display: flex;
+    width: 160px;
+    height: 320px;
+}
+
+.process-pics__item {
+    display: none;
+}
+
+.process-pics__item--active {
+    display: flex;
 }
 
 /* Услуги */
