@@ -406,7 +406,35 @@ button {
 
 /* Слайдер */
 
+.switches {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.switches__item {
+    width: 20px;
+    width: 27px;
+    height: 7px;
+    border-radius: 5px;
+    background-color: rgba(0, 185, 182, 0.25);
+    cursor: pointer;
+}
+
+.switches__item:not(:last-child) {
+    margin-right: 7px;
+}
+
+.switches__item--active {
+    width: 36px;
+    background-color: var(--green-1);
+}
+
 /* Карточка психолога */
+
+.psychos {
+    margin-bottom: 40px;
+}
 
 .psycho {
     display: flex;
