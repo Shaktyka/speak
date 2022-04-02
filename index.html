@@ -433,7 +433,7 @@
                 <ul class="list about__selection selection">
                     <li class="selection__item">
                         <div class="selection__img-wrap">
-                            <img src="images/icons/podbor-icon-1.png" width="70" height="70" alt="Иконка" class="selection__img">
+                            <img class="selection__img" src="images/icons/podbor-icon-1.png" width="70" height="70" alt="Иконка">
                         </div>
                         <div class="selection__info">
                             <h3 class="selection__title">Подбор “Попозже”</h3>
@@ -442,7 +442,7 @@
                     </li>
                     <li class="selection__item">
                         <div class="selection__img-wrap">
-                            <img src="images/icons/podbor-icon-1.png" width="70" height="70" alt="Иконка" class="selection__img">
+                            <img class="selection__img" src="images/icons/podbor-icon-2.png" width="70" height="70" alt="Иконка">
                         </div>
                         <div class="selection__info">
                             <h3 class="selection__title">Подбор “Сейчас”</h3>
@@ -457,22 +457,76 @@
             <div class="container">
                 <h2 class="module__title process__title">Как это устроено</h2>
                 <!-- Переключатели -->
-                <!-- Список слайдов -->
-                <ul class="list process__steps">
-                    <li class="process__step process-step">
-                        <h3 class="process-step__title">Заполните простую анкету</h3>
-                        <p class="process-step__text">Расскажите, что вас беспокоит и что важно в психологе.</p>
-                        <img class="process-step__img" src="images/content/mobile.jpeg" alt="Изображение телефона">
+                <ul class="list line-steps process__switches">
+                    <li class="line-steps__item line-steps__item--active">
+                        <button class="btn line-steps__btn" type="button">1</button>
                     </li>
-                    <li class="process__step process-step">
-                        <h3 class="process-step__title">Заполните простую анкету</h3>
-                        <p class="process-step__text">Расскажите, что вас беспокоит и что важно в психологе.</p>
-                        <img class="process-step__img" src="images/content/mobile.jpeg" alt="Изображение телефона">
+                    <li class="line-steps__item">
+                        <button class="btn line-steps__btn" type="button">2</button>
+                    </li>
+                    <li class="line-steps__item">
+                        <button class="btn line-steps__btn" type="button">3</button>
+                    </li>
+                    <li class="line-steps__item">
+                        <button class="btn line-steps__btn" type="button">4</button>
                     </li>
                 </ul>
+                <!-- <div class="process__slides"> -->
+                    <!-- Список изображений -->
+                    <ul class="list process__imgs process-pics">
+                        <li class="process-pics__item process-pics__item--active">
+                            <img class="process-pics__img" src="images/content/mobile-2.png" alt="Изображение мобильника 1">
+                        </li>
+                        <li class="process-pics__item">
+                            <img class="process-pics__img" src="images/content/mobile-2.png" alt="Изображение мобильника 2">
+                        </li>
+                        <li class="process-pics__item">
+                            <img class="process-pics__img" src="images/content/mobile-2.png" alt="Изображение мобильника 3">
+                        </li>
+                        <li class="process-pics__item">
+                            <img class="process-pics__img" src="images/content/mobile-2.png" alt="Изображение мобильника 4">
+                        </li>
+                    </ul>
+                    <!-- Список слайдов -->
+                    <ul class="list process__steps">
+                        <li class="process__step process-step process-step--active">
+                            <button class="btn process-steps__btn" type="button">1</button>
+                            <div class="process-step__wrap">
+                                <h3 class="process-step__title">Заполните простую анкету</h3>
+                                <p class="process-step__text">Расскажите, что вас беспокоит, и что важно в психологе.</p>
+                            </div>
+                        </li>
+                        <li class="process__step process-step">
+                            <button class="btn process-steps__btn" type="button">2</button>
+                            <div class="process-step__wrap">
+                                <h3 class="process-step__title">Выберите психолога</h3>
+                                <p class="process-step__text">Выберите понравившегося психолога </p>
+                            </div>
+                        </li>
+                        <li class="process__step process-step">
+                            <button class="btn process-steps__btn" type="button">3</button>
+                            <div class="process-step__wrap">
+                                <h3 class="process-step__title">Выберите способ связи с психологом</h3>
+                                <div class="process-step__text">
+                                    <p>49руб/мин по <span>аудио/видео связи</span></p>
+                                    <p>200руб за 24 часа <span>чата + аудио сообщения</span></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="process__step process-step">
+                            <button class="btn process-steps__btn" type="button">4</button>
+                            <div class="process-step__wrap">
+                                <h3 class="process-step__title">Начните общение</h3>
+                                <p class="process-step__text">Все общение происходит через платформу SPEAK. 
+                                    Вслучае если психолог вам не понравится, вы можете заменить его 
+                                    без дополнительных переплат</p>
+                            </div>
+                        </li>
+                    </ul>
+                <!-- </div> -->
                 <!-- Кнопка -->
                 <div class="process__link-wrap">
-                    <a class="process__link" href="#">Начать общение</a>
+                    <a class="btn btn--act process__link" href="#">Начать общение</a>
                 </div>
             </div>
         </section>

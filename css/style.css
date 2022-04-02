@@ -617,6 +617,10 @@ button {
 
 /* steps */
 
+.steps {
+    background-color: #fafbf9;
+}
+
 .steps__title {
     text-align: center;
     margin-bottom: 5px;
@@ -785,7 +789,53 @@ button {
     line-height: 140%;
 }
 
-/* Как это устроено */
+/* Как это устроено - process */
+
+.process__title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.line-steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.process__switches {
+    margin-bottom: 50px;
+}
+
+.line-steps__item {
+    position: relative;
+    display: flex;
+    border-radius: 50px;
+}
+
+.line-steps__item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.line-steps__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+
+    color: var(--green-1);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+
+    background-color: rgba(0, 185, 182, 0.1);
+    border-radius: 50px;
+}
+
+.line-steps__item--active .line-steps__btn {
+    background-color: var(--green-1);
+    color: var(--white);
+}
 
 /* Услуги */
 
