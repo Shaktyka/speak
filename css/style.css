@@ -1082,7 +1082,29 @@ button {
     max-width: 78px;
 }
 
-/* app 2 */
+/* App 2 */
+
+.app-2 .container {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.app-2__img-wrap {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.app-2__logo-img {
+    width: 295px;
+    height: 322px;
+}
+
+.app-2__title {
+    text-align: center;
+    margin-bottom: 30px;
+}
 
 /* Отзывы */
 
