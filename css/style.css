@@ -973,6 +973,7 @@ button {
 }
 
 .service {
+    max-width: 320px;
     position: relative;
     padding: 20px;
     color: var(--black-lg);
@@ -1093,10 +1094,13 @@ button {
     content: url('../images/icons/bullet-1.png');
 }
 
+/* Блок полей ввода и кнопок */
+
 .service__calc {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     padding: 12px 13px;
-    /* justify-content: space-between; */
     margin-top: 30px;
 
     background-color: var(--white);
@@ -1106,14 +1110,93 @@ button {
 .service__wrap {
     display: flex;
     align-items: center;
+    height: 30px;
+}
+
+.service__wrap:first-child {
+    display: flex;
+    justify-content: flex-start;
+    width: 154px;
+    max-width: 154px;
+    border-right: 1px solid #E0E0E0;
+    padding-right: 12px;
+}
+
+.service__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.service__btn--less {
+    transform: rotateY(180deg);
+}
+
+.service__form input {
+    height: 24px;
+    max-height: 24px;
+
+    padding-left: 5px;
+    padding-right: 5px;
+
+    color: #333333;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 135%;
+    text-align: center;
+
+    border: none;
 }
 
 .service__wrap--time .service__input {
-    max-width: 87px;
+    width: 53px;
+    max-width: 53px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none;
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.service__time {
+    margin-left: auto;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 135%;
+    color: #AFAFAF;
+
+    text-align: center;
+}
+
+.service__wrap--price {
+    flex-grow: 1;
+    padding-left: 12px;
 }
 
 .service__wrap--price .service__input {
-    max-width: 78px;
+    width: 60px;
+    margin-right: 5px;
+    padding-right: 0;
+
+    text-align: left;
+    padding-left: 0;
+
+    background-color: transparent;
+}
+
+.service__currency {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 135%;
+    color: #AFAFAF;
 }
 
 /* App 2 */

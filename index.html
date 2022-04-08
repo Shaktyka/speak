@@ -566,7 +566,7 @@
                             </p>
                             <ul class="list service__list">
                                 <li class="service__item">
-                                    Безлимитный доступа к чату с психологом до начала сессии
+                                    Безлимитный доступ к чату с психологом до начала сессии
                                 </li>
                                 <li class="service__item">
                                     Аудио/Видео звонки
@@ -579,27 +579,38 @@
                             <div class="service__calc">
                                 <div class="service__wrap service__wrap--time">
                                     <button class="service__btn service__btn--less">
-                                        icon
+                                        <svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.648 6.24561L1.05671 0.116682C0.83847 -0.038894 0.570245 -0.038894 0.352238 0.116682C0.134231 0.271964 0 0.559294 0 0.870446L0 13.1295C0 13.4406 0.134231 13.728 0.352238 13.8832C0.461242 13.9621 0.582859 14 0.704477 14C0.826094 14 0.947711 13.9609 1.05671 13.8832L9.648 7.75432C9.86648 7.59874 10 7.31141 10 7.00026C10 6.68911 9.86601 6.40148 9.648 6.24561Z" fill="#00B9B6"/>
+                                        </svg>
                                         <span class="visually-hidden">Меньше</span>
                                     </button>
+                                    <label class="visually-hidden" for="time">Продолжительность сессии</label>
                                     <input class="input service__input" 
                                         type="number" 
-                                        placeholder="20" 
+                                        placeholder="50" 
                                         min="1"
                                         name="time"
+                                        id="time"
                                     >
                                     <button class="service__btn service__btn--more">
-                                        icon
+                                        <svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.648 6.24561L1.05671 0.116682C0.83847 -0.038894 0.570245 -0.038894 0.352238 0.116682C0.134231 0.271964 0 0.559294 0 0.870446L0 13.1295C0 13.4406 0.134231 13.728 0.352238 13.8832C0.461242 13.9621 0.582859 14 0.704477 14C0.826094 14 0.947711 13.9609 1.05671 13.8832L9.648 7.75432C9.86648 7.59874 10 7.31141 10 7.00026C10 6.68911 9.86601 6.40148 9.648 6.24561Z" fill="#00B9B6"/>
+                                        </svg>
                                         <span class="visually-hidden">Больше</span>
                                     </button>
+                                    <span class="service__time">min</span>  
                                 </div>
                                 <div class="service__wrap service__wrap--price">
+                                    <label class="visually-hidden" for="price">Стоимость за указанную продолжительность</label>
                                     <input class="input service__input" 
                                         type="number"
                                         placeholder="2450" 
                                         min="1"
                                         name="price"
+                                        id="price"
+                                        disabled
                                     >
+                                    <span class="service__currency">&#8381;</span> 
                                 </div>
                             </div>
                             <button class="service__link btn btn--white" type="submit">Перейти</button>
