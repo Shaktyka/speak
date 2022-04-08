@@ -37,7 +37,6 @@ body {
     font-weight: 400;
     font-style: normal;
     color: var(--black-lg);
-    /* background: rgba(249, 253, 255, 0.7); */
     background-color: var(--bg-base);
     backdrop-filter: blur(700px);
 }
@@ -73,6 +72,7 @@ button {
     -o-object-fit: contain;
     object-fit: contain;
 }
+
 
 /* Классы для кнопок */
 
@@ -140,29 +140,26 @@ button {
     box-shadow: 0px 15px 30px rgba(220, 232, 243, 0.25);
 }
 
+
 /* Другие общие классы */
 
 .container {
     min-width: 360px;
-    width: 320px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/*
-@media (min-width: @tablet-width) {
-  .container {
-    padding: 0 30px;
-  }
+@media (min-width: 768px) {
+    .container {
+      padding: 0 40px;
+    }
 }
 
-@media (min-width: @desktop-width) {
-  .container {
-    max-width: 1300px;
-    padding: 0 40px;
-  }
+@media (min-width: 1920px) {
+    .container {
+      padding: 0 400px;
+    }
 }
-*/
 
 .visually-hidden {
     position: absolute;
@@ -191,11 +188,17 @@ button {
     padding-bottom: 12px;
 }
 
+@media (min-width: 768px) {
+    .header {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
 .header .container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    min-height: 54px;
 }
 
 /* Логотип */
