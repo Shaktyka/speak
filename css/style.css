@@ -188,17 +188,17 @@ button {
     padding-bottom: 12px;
 }
 
+.header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 @media (min-width: 768px) {
     .header {
         padding-top: 20px;
         padding-bottom: 20px;
     }
-}
-
-.header .container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 
 /* Логотип */
@@ -291,13 +291,6 @@ button {
     padding-bottom: 40px;
 }
 
-@media (min-width: 768px) {
-    .module {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-}
-
 .module__title {
     margin: 0;
     font-weight: 700;
@@ -307,6 +300,11 @@ button {
 }
 
 @media (min-width: 768px) {
+    .module {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
     .module__title {
         font-size: 28px;
     }
@@ -318,40 +316,16 @@ button {
     padding-top: 30px;
 }
 
-@media (min-width: 768px) {
-    .hero {
-        padding-top: 50px;
-    }
-}
-
 .hero .container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-@media (min-width: 768px) {
-    .hero .container {
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-        position: relative;
-        min-height: 275px;
-    }
-}
-
 .hero__info {
     width: 100%;
     text-align: center;
     margin-bottom: 30px;
-}
-
-@media (min-width: 768px) {
-    .hero__info {
-        width: 393px;
-        text-align: left;
-        margin-bottom: 0;
-    }
 }
 
 .hero__subtitle {
@@ -361,21 +335,8 @@ button {
     color: var(--green-1)
 }
 
-@media (min-width: 768px) {
-    .hero__subtitle {
-        font-size: 18px;
-    }
-}
-
 .hero__title {
     margin-bottom: 30px;
-}
-
-@media (min-width: 768px) {
-    .hero__title {
-        font-size: 32px;
-        margin-bottom: 50px;
-    }
 }
 
 .hero__img-wrap {
@@ -383,6 +344,33 @@ button {
 }
 
 @media (min-width: 768px) {
+    .hero {
+        padding-top: 50px;
+    }
+
+    .hero .container {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: relative;
+        min-height: 275px;
+    }
+
+    .hero__info {
+        width: 393px;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .hero__subtitle {
+        font-size: 18px;
+    }
+
+    .hero__title {
+        font-size: 32px;
+        margin-bottom: 50px;
+    }
+
     .hero__img-wrap {
         position: absolute;
         top: 0;
@@ -733,7 +721,7 @@ button {
     .help .container {
         flex-direction: row;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
     }
 }
 
@@ -798,7 +786,7 @@ button {
         max-width: 330px;
         width: 330px;
         height: 298px;
-        padding-top: 41px;
+        /* padding-top: 41px; */
     }
 }
 
