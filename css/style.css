@@ -565,6 +565,13 @@ button {
     margin-bottom: 22.5px;
 }
 
+@media (min-width: 768px) {
+    .tags {
+        padding: 0 15px;
+        margin-bottom: 30px;
+    }
+}
+
 .tag {
     margin: 7.5px;
 
@@ -588,6 +595,12 @@ button {
     color: var(--black-lg);
 }
 
+@media (min-width: 768px) {
+    .tag__link {
+        font-size: 16px;
+    }
+}
+
 .tag--active .tag__link {
     color: var(--green-1);
 }
@@ -595,9 +608,15 @@ button {
 .tag .btn--green {
     padding: 10px 30px;
     color: var(--white);
-    font-weight: 700;
+    font-weight: 600;
     font-size: 14px;
     line-height: 120%;
+}
+
+@media (min-width: 768px) {
+    .tag .btn--green {
+        font-size: 16px;
+    }
 }
 
 /* Звёздочки */
@@ -704,13 +723,43 @@ button {
 
 /* Поможем вам */
 
+.help .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .help .container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+.help__info {
+    width: 100%;
+}
+
 .help__title {
     text-align: center;
     margin-bottom: 30px;
 }
 
+@media (min-width: 768px) {
+    .help__title {
+        text-align: left;
+    }
+}
+
 .help__list {
     margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .help__list {
+        max-width: 390px;
+    }
 }
 
 .help__item {
@@ -733,9 +782,36 @@ button {
     margin-bottom: 15px;
 }
 
+@media (min-width: 768px) {
+    .help__item:not(:last-child) {
+        margin-bottom: 12px;
+    }
+}
+
+.help__img-wrap {
+    display: flex;
+}
+
+@media (min-width: 768px) {
+    .help__poster {
+        display: flex;
+        max-width: 330px;
+        width: 330px;
+        height: 298px;
+        padding-top: 41px;
+    }
+}
+
 .help__img {
     width: 320px;
     height: 289px;
+}
+
+@media (min-width: 768px) {
+    .help__img {
+        width: 330px;
+        height: 298px;
+    }
 }
 
 /* Преимущества advantages */
@@ -867,14 +943,6 @@ button {
     margin: 0;
     font-size: 16px;
     line-height: 140%;
-}
-
-.help__img-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 320px;
-    height: 335px;
 }
 
 /* О сервисе */
