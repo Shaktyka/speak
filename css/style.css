@@ -392,6 +392,8 @@ button {
     margin-bottom: 40px;
 }
 
+/* видео */
+
 .app__video-wrap {
     position: relative;
     display: flex;
@@ -402,21 +404,9 @@ button {
     margin-bottom: 30px;
 }
 
-@media (min-width: 768px) {
-    .app__video-wrap {
-        max-width: 490px;
-    }
-}
-
 .app__video {
     display: flex;
     max-width: 320px;
-}
-
-@media (min-width: 768px) {
-    .app__video {
-        max-width: 490px;
-    }
 }
 
 .app__video-play {
@@ -428,12 +418,7 @@ button {
     background: none;
 }
 
-@media (min-width: 768px) {
-    .app__info {
-        width: 100%;
-        align-self: flex-start;
-    }
-}
+/* описание */
 
 .app__logo {
     display: flex;
@@ -444,21 +429,9 @@ button {
     margin-bottom: 30px;
 }
 
-@media (min-width: 768px) {
-    .app__title {
-        text-align: left;
-    }
-}
-
 .app__logo {
     display: flex;
     align-items: center;
-}
-
-@media (min-width: 768px) {
-    .app__logo {
-        max-width: 393px;
-    }
 }
 
 .app__logo-wrap {
@@ -482,20 +455,6 @@ button {
     height: 55px;
 }
 
-@media (min-width: 768px) {
-    .app__logo-wrap {
-        min-width: 80px;
-        min-height: 80px;
-        width: 80px;
-        height: 80px;
-    }
-
-    .app__logo-img {
-        width: 60px;
-        height: 60px;
-    }
-}
-
 .app__title-store {
     margin: 0;
     margin-bottom: 5px;
@@ -513,21 +472,9 @@ button {
     line-height: 140%;
 }
 
-@media (min-width: 768px) {
-    .app__text {
-        font-size: 16px;
-    }
-}
-
 .app__links {
     display: flex;
     justify-content: center;
-}
-
-@media (min-width: 768px) {
-    .app__links {
-        justify-content: flex-start;
-    }
 }
 
 .app__link {
@@ -538,7 +485,53 @@ button {
     margin-right: 20px;
 }
 
+@media (min-width: 768px) {
+
+    .app__video-wrap {
+        max-width: 490px;
+    }
+
+    .app__video {
+        max-width: 490px;
+    }
+
+    .app__info {
+        width: 100%;
+        align-self: flex-start;
+    }
+
+    .app__title {
+        text-align: left;
+    }
+
+    .app__logo {
+        max-width: 393px;
+    }
+
+    .app__logo-wrap {
+        min-width: 80px;
+        min-height: 80px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .app__logo-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .app__text {
+        font-size: 16px;
+    }
+
+    .app__links {
+        justify-content: flex-start;
+    }
+}
+
 /* Психологи */
+
+/* Список тегов */
 
 .speakers__title {
     text-align: center;
@@ -551,13 +544,6 @@ button {
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 22.5px;
-}
-
-@media (min-width: 768px) {
-    .tags {
-        padding: 0 15px;
-        margin-bottom: 30px;
-    }
 }
 
 .tag {
@@ -583,12 +569,6 @@ button {
     color: var(--black-lg);
 }
 
-@media (min-width: 768px) {
-    .tag__link {
-        font-size: 16px;
-    }
-}
-
 .tag--active .tag__link {
     color: var(--green-1);
 }
@@ -602,6 +582,16 @@ button {
 }
 
 @media (min-width: 768px) {
+
+    .tags {
+        padding: 0 15px;
+        margin-bottom: 30px;
+    }
+
+    .tag__link {
+        font-size: 16px;
+    }
+
     .tag .btn--green {
         font-size: 16px;
     }
@@ -717,14 +707,6 @@ button {
     align-items: center;
 }
 
-@media (min-width: 768px) {
-    .help .container {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
 .help__info {
     width: 100%;
 }
@@ -734,20 +716,8 @@ button {
     margin-bottom: 30px;
 }
 
-@media (min-width: 768px) {
-    .help__title {
-        text-align: left;
-    }
-}
-
 .help__list {
     margin-bottom: 20px;
-}
-
-@media (min-width: 768px) {
-    .help__list {
-        max-width: 390px;
-    }
 }
 
 .help__item {
@@ -770,24 +740,8 @@ button {
     margin-bottom: 15px;
 }
 
-@media (min-width: 768px) {
-    .help__item:not(:last-child) {
-        margin-bottom: 12px;
-    }
-}
-
 .help__img-wrap {
     display: flex;
-}
-
-@media (min-width: 768px) {
-    .help__poster {
-        display: flex;
-        max-width: 330px;
-        width: 330px;
-        height: 298px;
-        /* padding-top: 41px; */
-    }
 }
 
 .help__img {
@@ -796,11 +750,38 @@ button {
 }
 
 @media (min-width: 768px) {
+
+    .help .container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .help__title {
+        text-align: left;
+    }
+
+    .help__list {
+        max-width: 390px;
+    }
+
+    .help__item:not(:last-child) {
+        margin-bottom: 12px;
+    }
+
+    .help__poster {
+        display: flex;
+        max-width: 330px;
+        width: 330px;
+        height: 298px;
+    }
+
     .help__img {
         width: 330px;
         height: 298px;
     }
 }
+
 
 /* Преимущества advantages */
 
