@@ -916,6 +916,12 @@ button {
     line-height: 140%;
 }
 
+.steps__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .steps__list {
     margin-bottom: 20px;
     counter-reset: list;
@@ -955,6 +961,44 @@ button {
     margin: 0;
     font-size: 16px;
     line-height: 140%;
+}
+
+.steps__img-wrap {
+    display: flex;
+}
+
+@media (min-width: 768px) {
+
+    .steps .container {
+        padding-right: 0;
+    }
+
+    .steps__title {
+        text-align: left;
+    }
+
+    .steps__subtitle {
+        text-align: center;
+    }
+
+    .steps__wrap {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .steps__info {
+        max-width: 393px;
+    }
+
+    .steps__list {
+        margin-bottom: 0;
+    }
+
+    .steps__img-wrap {
+        max-width: 317px;
+        width: 317px;
+        object-fit: contain;
+    }
 }
 
 /* О сервисе */
